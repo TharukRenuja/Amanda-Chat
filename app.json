@@ -1,49 +1,41 @@
 {
-   "name": "Rika",
-   "description": "A Telegram Chat bot made using Pyrogram and Python",
-   "keywords": [
-      "telegram bot",
-      "chat bot",
-   ],
-   "repository": "https://github.com/Friends-Zone/rikachatbot",
-   "env": {
-      "bot_token": {
-         "description": "Your telegram bot token, get from @Botfather in telegram.",
-         "required": true,
-         "value": ""
-      },
-      "ARQ_API_KEY": {
-         "description": "Get this from @ARQRobot",
-         "required": true,
-      },
-      "ARQ_API_BASE_URL": {
-         "description": "DO NOT TOUCH",
-         "required": true,
-         "value": "https://thearq.tech"
-      },
-      "api_id": {
-         "description": "Get this from tg",
-         "required": true,
-      },
-      "api_hash": {
-         "description": "Get this from tg",
-         "required": true,
-      },
-      "LANGUAGE": {
-         "description": "Language aff.",
-         "required": true,
-         "value": "en"
-      }
-   },
-   "buildpacks": [
-    {
-      "url": "heroku/python"
+    "name": "Rika",
+    "description": "A Telegram Chat bot made using Pyrogram and Python",
+    "repository": "https://github.com/Friends-Zone/rikachatbot",
+    "logo": "https://telegra.ph/file/fb74c38f56323fb480709.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "telegram-chat-bot",
+    "pyrogram"
+    ],
+    "env": {
+        "TOKEN": {
+            "description": "Obtain a Telegram bot token by contacting @BotFather",
+            "required": true
+        },
+        "HASH": {
+            "description": "API hash.",
+            "required": true
+        },
+        "ID": {
+            "description": "API ID.",
+            "required": true
+        },
+        "ARQ_API_BASE_URL": {
+            "description": "Don't change this value",
+            "value": "https://thearq.tech",
+            "required": true
+        },
+        "ARQ_API_KEY": {
+            "description": "Get this from @ARQRobot.",
+            "required": true
+        },
+        "LANGUAGE": {
+            "description": "Language aff",
+            "value": "en",
+            "required": true
+        }
     }
-  ],
-   "formation": {
-      "worker": {
-         "quantity": 1,
-         "size": "free"
-      }
-   }
 }
