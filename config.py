@@ -1,5 +1,5 @@
-bot_token = "wtf" # yourbot token
-ARQ_API_KEY = "sexmmm" # Get this from @ARQBot
+bot_token = "wtf:token" # yourbot token
+ARQ_API_KEY = "sexmmm" # Get this from @ARQRobot"
 api_id = 6 # your api id
 api_hash = "69696969696sexm" # your apihash
 # List of supported languages >>
