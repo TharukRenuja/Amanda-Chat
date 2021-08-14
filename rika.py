@@ -16,6 +16,8 @@ else:
 
 bot_token = str(bot_token)
 ARQ_API_KEY = str(ARQ_API_KEY)
+api_id = int(ID)
+api_hash = str(HASH)
 LANGUAGE = str(LANGUAGE)
 ARQ_API_BASE_URL = str(ARQ_API_BASE_URL)
 
