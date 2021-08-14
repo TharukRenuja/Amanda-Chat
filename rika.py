@@ -1,13 +1,23 @@
 print("[INFO]: INITIALIZING ...")
 import re
+from os import path
 from asyncio import (gather, get_event_loop, sleep)
 
 from aiohttp import ClientSession
 from pyrogram import (Client, filters, idle)
 from Python_ARQ import ARQ
 
-from config import *
+is_config = path.exists("config.py")
 
+if is_config:
+    from config import *
+else:
+    from sample_config import *
+
+bot_token = str(bot_token)
+ARQ_API_KEY = str(ARQ_API_KEY)
+LANGUAGE = str(LANGUAGE)
+ARQ_API_BASE_URL = str(ARQ_API_BASE_URL)
 
 print("[INFO]: INITIALIZING BOT CLIENT ...")
 luna = Client(":memory:",
