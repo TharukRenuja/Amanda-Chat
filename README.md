@@ -13,7 +13,7 @@ A public running instance can be found on telegram as [@TheAmandabot](https://t.
 
 ## Installation
 
-1. `git clone https://github.com/Friends-Zone/rikachatbot`
+1. `git clone https://github.com/TharukRenuja/Amanda-Chat`
 2. `cd rikachatbot`
 3. `pip3 install -r requirements.txt` to install the requirements.
 4. Edit `config.py` with your own values.!
