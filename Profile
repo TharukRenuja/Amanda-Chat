@@ -1,1 +1,1 @@
-worker: amanda.py
+worker: python3 amanda.py
