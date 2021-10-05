@@ -27,9 +27,10 @@ luna = Client(":memory:",
               api_id=api_id,
               api_hash=api_hash,
 )
+
 bot_id = int(bot_token.split(":")[0])
-print("[INFO]: INITIALIZING ...")
 arq = None
+bot_id = int(bot_token.split(":")[0])
 
 
 async def lunaQuery(query: str, user_id: int):
