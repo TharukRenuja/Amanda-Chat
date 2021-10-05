@@ -55,15 +55,15 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "typing")
     response, _ = await gather(lunaQuery(query, user_id), sleep(2))
     if "Luna" in response:
-        responsee = response.replace("Luna", "Kawaii Rika")
+        responsee = response.replace("Luna", "Amanda")
     else:
         responsee = response
     if "Aco" in responsee:
-        responsess = responsee.replace("Aco", "Rika")
+        responsess = responsee.replace("Aco", "Amanda")
     else:
         responsess = responsee
-    if "Who is rika?" in responsess:
-        responsess2 = responsess.replace("Who is rika?", "Nani?👀")
+    if "Who is Amanda?" in responsess:
+        responsess2 = responsess.replace("Who is Amanda?", "Amanda?👀")
     else:
         responsess2 = responsess
     await message.reply_text(responsess2)
@@ -73,7 +73,7 @@ async def type_and_send(message):
 @luna.on_message(
     ~filters.private
     & filters.text
-    & ~filters.command(["start", "start@RikaChatBot"])
+    & ~filters.command(["start", "start@TheAmandaBot"])
     & ~filters.edited,
     group=69,
 )
@@ -86,7 +86,7 @@ async def chat(_, message):
             return
     else:
         match = re.search(
-            "[.|\n]{0,}rika[.|\n]{0,}",
+            "[.|\n]{0,}Amanda[.|\n]{0,}",
             message.text.strip(),
             flags=re.IGNORECASE,
         )
@@ -97,7 +97,7 @@ async def chat(_, message):
 
 @luna.on_message(
     filters.private
-    & ~filters.command(["start", "start@RikaChatBot"])
+    & ~filters.command(["start", "start@TheAmandaBot"])
     & ~filters.edited
 )
 async def chatpm(_, message):
@@ -107,7 +107,7 @@ async def chatpm(_, message):
     await type_and_send(message)
 
 
-@luna.on_message(filters.command(["start", "start@RikaChatBot"]) & ~filters.edited)
+@luna.on_message(filters.command(["start", "start@TheAmandaBot"]) & ~filters.edited)
 async def startt(_, message):
     await message.reply_text("Hi, i'm alive :)")
 
