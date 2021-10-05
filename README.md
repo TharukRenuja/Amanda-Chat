@@ -1,9 +1,9 @@
 # RikaChatBot
 Just another Telegram AI chat bot written in Python using Pyrogram.
 
-A public running instance can be found on telegram as [@RikaChatBot](https://t.me/RikaChatBot).
+A public running instance can be found on telegram as [@TheAmandabot](https://t.me/TheAmandabot).
 
-<img src="https://telegra.ph/file/fb74c38f56323fb480709.jpg" width="200" align="right">
+<img src="https://telegra.ph/file/e530915f31b82f0f35c34.jpg" width="200" align="right">
 
 ## Requirements
 
@@ -21,4 +21,4 @@ A public running instance can be found on telegram as [@RikaChatBot](https://t.m
 
 
 ## FOR HERUKO:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Friends-Zone/rikachatbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TharukRenuja/Amanda-Chat)
